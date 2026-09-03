@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>고향봉투 파트너십 제안 — 국제특송·통관·포워딩 파트너용</title>
+<meta name="description" content="한국 체류 동남아 근로자의 고향행 국제소포 수요를 모국어로 집계·합배송하는 자본경량 애그리게이터. 면허·통관·간선·목적국 배송은 기존 특송사·관세법인에 비독점 위탁하는 파트너십 제안.">
+<!--
+  고향봉투 파트너십 제안 덱 · 14섹션 · 원페이지 세로 스크롤
+  스타일: J 발표덱 표준(화이트/차콜/레드·Pretendard) — SSOT=발표덱_스타일_가이드.md
+  규제 하드락: '면세/절세' 표방 금지(저렴함 근거=집화 밀도만) · 과장/최상급 금지 · 통계=출처 기반 추정 · 물량=가정 명시 모델 · 개인식별자 노출 금지(중립표현)
+-->
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css');
+:root{
+  --bg:#ffffff; --ink:#232528; --ink2:#2c2f33; --gray:#8b9096; --gray2:#a6abb2; --body:#4a4f56;
+  --red:#e12e2e; --red-soft:#fbecec; --charcoal:#3a3d41; --charcoal2:#2d2f33;
+  --thead:#e9edf9; --tline:#dbe1f0; --blue:#2f66e6; --swoosh:#eef1f6;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{min-height:100%;background:#e7e9ec;overflow-x:hidden;
+  font-family:"Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo",sans-serif;
+  -webkit-font-smoothing:antialiased;word-break:keep-all}
+.deck{max-width:1280px;margin:0 auto;position:relative;background:var(--bg);overflow:hidden;box-shadow:0 10px 50px rgba(0,0,0,.14)}
+.slide{position:relative;min-height:auto;padding:96px 56px 66px;display:flex;flex-direction:column;justify-content:center;border-bottom:10px solid #e7e9ec}
+.slide:last-child{border-bottom:0}
+@media(min-width:761px){.slide{min-height:100svh}}
+.hd{position:absolute;top:34px;left:56px;right:56px;display:flex;justify-content:space-between;align-items:baseline;z-index:3}
+.hd .sec{font-size:20px;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.hd .pg{font-size:20px;font-weight:600;color:var(--gray2);letter-spacing:.02em}
+/* title block */
+.tw{text-align:center;flex:none}
+.eyebrow{font-size:clamp(17px,2vw,23px);font-weight:600;color:var(--gray);margin-bottom:16px;letter-spacing:.005em}
+.headline{font-size:clamp(31px,4.4vw,48px);font-weight:800;color:var(--ink);line-height:1.22;letter-spacing:-.015em;text-wrap:balance}
+.headline.sm{font-size:clamp(28px,4vw,44px);line-height:1.2}
+.red{color:var(--red)}
+.desc{font-size:clamp(19px,2.1vw,25px);color:var(--body);text-align:center;margin-top:20px;line-height:1.6;max-width:1000px;margin-left:auto;margin-right:auto}
+.desc b{color:var(--ink);font-weight:800}
+.body{margin-top:52px;flex:none}
+/* paybar */
+.paybar{display:flex;align-items:center;gap:16px;background:var(--red-soft);border-left:7px solid var(--red);
+  border-radius:12px;padding:24px 32px;margin:0 auto;max-width:1160px;box-shadow:0 4px 18px rgba(225,46,46,.06)}
+.paybar .tag{flex:none;background:var(--red);color:#fff;font-size:14px;font-weight:800;border-radius:7px;padding:8px 15px;letter-spacing:.02em}
+.paybar .t{font-size:clamp(19px,2vw,24px);color:var(--ink2);font-weight:600;line-height:1.44}
+.paybar .t b{color:var(--red);font-weight:800}
+.paybar.neu{background:#f3f4f6;border-left-color:var(--charcoal)}
+.paybar.neu .tag{background:var(--charcoal)}
+.paybar.neu .t b{color:var(--ink)}
+/* editorial split (make vs get / us vs partner) */
+.split2{display:grid;grid-template-columns:1fr 1fr;gap:0;max-width:1180px;margin:0 auto;position:relative}
+.split2::before{content:"";position:absolute;top:6%;bottom:6%;left:50%;width:1px;background:var(--tline)}
+.split2 .col{padding:8px 44px}
+.split2 .lab{display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:800;color:#fff;background:var(--charcoal);border-radius:999px;padding:8px 18px;letter-spacing:.01em}
+.split2 .lab.r{background:var(--red)}
+.split2 h4{font-size:clamp(22px,2.5vw,29px);font-weight:800;color:var(--ink);line-height:1.28;margin:20px 0 18px;letter-spacing:-.01em}
+.split2 h4 .red{color:var(--red)}
+.split2 ul{list-style:none;display:flex;flex-direction:column;gap:15px}
+.split2 li{font-size:clamp(17px,1.75vw,21px);color:var(--body);line-height:1.5;padding-left:24px;position:relative}
+.split2 li::before{content:"";position:absolute;left:2px;top:.55em;width:9px;height:9px;border-radius:3px;background:var(--charcoal)}
+.split2 .col.r li::before{background:var(--red)}
+.split2 li b{color:var(--ink);font-weight:800}
+.split2 .col.r li b{color:var(--red)}
+/* stat band (market) */
+.stats{display:flex;justify-content:center;gap:0;margin:0 auto 34px;max-width:1200px}
+.stats .s{flex:1;padding:6px 26px;text-align:center;position:relative}
+.stats .s + .s::before{content:"";position:absolute;left:0;top:8%;height:84%;width:1px;background:var(--tline)}
+.stats .v{font-size:clamp(34px,4.4vw,54px);font-weight:900;color:var(--red);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stats .v small{font-size:.42em;font-weight:800;color:var(--ink);letter-spacing:0}
+.stats .k{font-size:clamp(15px,1.6vw,19px);font-weight:700;color:var(--ink);margin-top:14px;line-height:1.34}
+.stats .src{font-size:13px;color:var(--gray);margin-top:8px;line-height:1.4}
+/* axis (3-col editorial) */
+.axis{display:flex;justify-content:center;gap:0;margin:0 auto;max-width:1180px}
+.axis .a{flex:1;padding:10px 34px;text-align:center;position:relative}
+.axis .a + .a::before{content:"";position:absolute;left:0;top:8%;height:84%;width:1px;background:var(--tline)}
+.axis .n{width:46px;height:46px;margin:0 auto 16px;border-radius:50%;background:var(--charcoal);color:#fff;font-weight:900;font-size:22px;display:flex;align-items:center;justify-content:center}
+.axis .lb{font-size:clamp(21px,2.3vw,27px);font-weight:800;color:var(--ink);line-height:1.28}
+.axis .sb{font-size:clamp(16px,1.7vw,20px);font-weight:500;color:var(--body);margin-top:13px;line-height:1.52}
+.axis .sb b{color:var(--red);font-weight:800}
+/* flow nodes */
+.flow{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:nowrap;margin:0 auto}
+.node{background:#f3f4f6;border:1px solid #e3e5e8;color:var(--ink);border-radius:14px;padding:20px 20px;text-align:center;display:flex;flex-direction:column;justify-content:center;min-width:0;flex:1;gap:8px}
+.node .nt{font-size:clamp(18px,1.9vw,22px);font-weight:800;line-height:1.26}
+.node .ns{font-size:clamp(14px,1.5vw,17px);font-weight:500;color:var(--gray);line-height:1.4}
+.node.hot{background:#fffafa;border:2px solid var(--red)}
+.node.hot .nt{color:var(--red)}
+.node.dark{background:var(--charcoal2);border-color:var(--charcoal2)}
+.node.dark .nt{color:#fff}.node.dark .ns{color:#c3c7cc}
+.arw{align-self:center;color:#c2c5c9;font-size:26px;font-weight:900;flex:none}
+/* darkbox */
+.darkbox{background:var(--charcoal2);color:#eef0f2;border-radius:14px;padding:26px 34px;font-size:clamp(19px,2vw,24px);line-height:1.55;text-align:center;max-width:1120px;margin:0 auto;font-weight:600}
+.darkbox b{color:#ff8a8a;font-weight:800}
+/* table */
+table{border-collapse:separate;border-spacing:0;width:100%;max-width:1180px;margin:0 auto;box-shadow:0 4px 18px rgba(30,25,40,.06);border-radius:14px;overflow:hidden}
+th,td{padding:19px 20px;font-size:clamp(16px,1.75vw,21px);text-align:center;color:var(--ink2);line-height:1.4}
+thead th{background:var(--thead);font-weight:800;color:var(--ink)}
+tbody tr{border-bottom:1px solid var(--tline)}
+tbody td{border-bottom:1px solid var(--tline)}
+tbody td:first-child{font-weight:800;color:var(--ink);text-align:left;white-space:nowrap}
+td .goal{color:var(--red);font-weight:800}
+td small{display:block;font-size:14px;color:var(--gray);font-weight:600;margin-top:4px}
+.note{font-size:clamp(14px,1.5vw,17px);color:var(--gray);text-align:center;margin-top:18px;line-height:1.5;max-width:1120px;margin-left:auto;margin-right:auto}
+.note b{color:var(--body);font-weight:700}
+/* icons grid */
+.icons{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:0 auto;max-width:1180px}
+.ic{text-align:center;border:1px solid #edf0f4;border-radius:16px;padding:36px 26px;min-width:0;box-shadow:0 4px 18px rgba(30,25,40,.06);background:#fff;display:flex;flex-direction:column;align-items:center;gap:15px}
+.ic .ig{width:60px;height:60px;border-radius:16px;background:#f3f4f6;display:flex;align-items:center;justify-content:center}
+.ic .ig svg{width:34px;height:34px;fill:var(--charcoal)}
+.ic h5{font-size:clamp(19px,2vw,23px);font-weight:800;color:var(--ink);line-height:1.24}
+.ic p{font-size:clamp(15px,1.6vw,18px);color:var(--body);line-height:1.48}
+.ic p b{color:var(--red);font-weight:800}
+.ic.hot .ig{background:var(--red-soft)}.ic.hot .ig svg{fill:var(--red)}
+/* compliance pipeline */
+.pipe{display:flex;align-items:stretch;justify-content:center;gap:10px;margin:0 auto;max-width:1200px}
+.pstep{flex:1;min-width:0;display:flex;flex-direction:column;gap:16px;align-items:center}
+.pstep .ph{width:100%;background:var(--charcoal);color:#fff;border-radius:12px;padding:26px 12px;font-size:clamp(17px,1.85vw,21px);font-weight:800;text-align:center;line-height:1.26}
+.pstep.end .ph{background:var(--red)}
+.pstep .pr{font-size:clamp(14px,1.5vw,17px);color:var(--body);line-height:1.44;text-align:center;padding:0 4px}
+.pstep .pr b{color:var(--ink);font-weight:800}
+.parw{display:flex;align-items:center;color:#b3b8bf;font-size:24px;font-weight:900;padding-top:22px}
+/* guardrail chips */
+.guards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:0 auto;max-width:1120px}
+.guard{display:flex;gap:15px;align-items:flex-start;background:#f7f8fa;border:1px solid #e9ecf0;border-radius:12px;padding:20px 24px}
+.guard .gk{flex:none;width:30px;height:30px;border-radius:8px;background:var(--charcoal);display:flex;align-items:center;justify-content:center}
+.guard .gk svg{width:17px;height:17px;fill:#fff}
+.guard .gt{font-size:clamp(16px,1.7vw,20px);color:var(--body);line-height:1.46}
+.guard .gt b{color:var(--ink);font-weight:800}
+.guard .gt b.red{color:var(--red)}
+/* multilingual trust mockup */
+.mk{display:grid;grid-template-columns:0.92fr 1.08fr;gap:clamp(30px,4vw,62px);align-items:center;max-width:1180px;margin:0 auto}
+.mk .phone{background:var(--charcoal2);border-radius:30px;padding:16px;box-shadow:0 24px 60px -24px rgba(30,25,40,.5);max-width:340px;margin:0 auto;width:100%}
+.mk .scr{background:#fff;border-radius:18px;padding:22px 18px;display:flex;flex-direction:column;gap:14px;min-height:430px}
+.mk .scr .top{display:flex;align-items:center;justify-content:space-between}
+.mk .scr .brand{font-size:19px;font-weight:900;color:var(--ink)}
+.mk .scr .brand span{color:var(--red)}
+.mk .scr .langtab{font-size:12px;font-weight:800;color:var(--red);background:var(--red-soft);border-radius:999px;padding:5px 12px}
+.mk .scr .greet{font-size:15px;font-weight:700;color:var(--body);line-height:1.4}
+.mk .scr .prod{border:1px solid #eceef1;border-radius:12px;padding:13px 14px;display:flex;gap:12px;align-items:center}
+.mk .scr .prod .th{width:42px;height:42px;border-radius:9px;background:#eef0f3;flex:none}
+.mk .scr .prod .pt{font-size:14px;font-weight:800;color:var(--ink)}
+.mk .scr .prod .pd{font-size:12.5px;color:var(--gray);margin-top:3px}
+.mk .scr .esc{background:#f0f7f1;border:1px solid #cbe6cf;border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.mk .scr .esc .dot{width:22px;height:22px;border-radius:50%;background:#2f9e44;flex:none;display:flex;align-items:center;justify-content:center}
+.mk .scr .esc .dot svg{width:12px;height:12px;fill:#fff}
+.mk .scr .esc .et{font-size:13px;font-weight:800;color:#2b7a35;line-height:1.35}
+.mk .scr .cta{margin-top:auto;background:var(--red);color:#fff;text-align:center;border-radius:12px;padding:13px;font-size:15px;font-weight:800}
+.mk .rt .lead{font-size:clamp(18px,1.9vw,23px);color:var(--body);line-height:1.55;margin-bottom:22px}
+.mk .rt .lead b{color:var(--ink);font-weight:800}
+.langs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.langchip{font-size:clamp(15px,1.6vw,18px);font-weight:700;color:var(--ink);background:#f3f4f6;border:1px solid #e3e5e8;border-radius:999px;padding:9px 18px}
+.langchip.core{background:var(--charcoal);color:#fff;border-color:var(--charcoal)}
+.livelink{display:inline-flex;align-items:center;gap:11px;background:var(--charcoal2);color:#fff;border-radius:12px;padding:16px 24px;font-size:clamp(16px,1.7vw,20px);font-weight:800;text-decoration:none;transition:transform .16s ease,box-shadow .16s ease}
+.livelink:hover{transform:translateY(-3px);box-shadow:0 16px 34px -18px rgba(30,25,40,.6)}
+.livelink .u{font-weight:600;color:#c3c7cc;font-size:.82em}
+.livelink svg{width:22px;height:22px;fill:#fff}
+/* ask list */
+.asks{display:flex;flex-direction:column;gap:20px;margin:0 auto;max-width:1120px}
+.ask{display:flex;align-items:center;gap:22px;border:1px solid #edf0f4;border-radius:14px;padding:30px 34px;background:#fff;box-shadow:0 4px 18px rgba(30,25,40,.05)}
+.ask .an{flex:none;width:52px;height:52px;border-radius:50%;background:var(--charcoal);color:#fff;font-weight:900;font-size:23px;display:flex;align-items:center;justify-content:center}
+.ask .at{font-size:clamp(19px,2vw,24px);font-weight:700;color:var(--ink);line-height:1.36}
+.ask .at b{color:var(--red);font-weight:800}
+.ask.hot .an{background:var(--red)}
+/* roadmap timeline */
+.road{display:flex;align-items:stretch;justify-content:center;gap:0;margin:0 auto;max-width:1200px}
+.rstage{flex:1;padding:0 20px;position:relative;text-align:center}
+.rstage + .rstage::before{content:"";position:absolute;left:0;top:26px;height:calc(100% - 40px);width:1px;background:var(--tline)}
+.rstage .rp{font-size:14px;font-weight:800;color:#fff;background:var(--charcoal);border-radius:999px;padding:6px 16px;display:inline-block}
+.rstage.wedge .rp{background:var(--red)}
+.rstage .rt{font-size:clamp(19px,2vw,23px);font-weight:800;color:var(--ink);margin-top:16px;line-height:1.26}
+.rstage .rd{font-size:clamp(15px,1.55vw,18px);color:var(--body);margin-top:11px;line-height:1.48}
+.rstage .rd b{color:var(--red);font-weight:800}
+/* cover */
+.cover{justify-content:center;padding:70px 72px;overflow:hidden;min-height:100svh;
+  background:linear-gradient(135deg,#ffffff 0%,#ffffff 58%,#fdf1f1 100%)}
+.swoosh{position:absolute;right:-160px;bottom:-220px;width:820px;height:820px;border-radius:50%;background:var(--swoosh);z-index:0}
+.swoosh:after{content:"";position:absolute;right:150px;bottom:150px;width:620px;height:620px;border-radius:50%;background:#fff}
+.cover .b{position:relative;z-index:1;max-width:1000px}
+.cover .kick{font-size:clamp(15px,1.7vw,20px);font-weight:800;color:var(--red);letter-spacing:.06em;margin-bottom:20px}
+.cover .k1{font-size:clamp(19px,2.3vw,26px);font-weight:700;color:var(--ink2);line-height:1.4}
+.cover .k1 b{color:var(--red);font-weight:800}
+.cover .k2{font-size:clamp(40px,6.2vw,66px);font-weight:900;color:var(--ink);letter-spacing:-.025em;margin:22px 0 20px;line-height:1.1}
+.cover .en{font-size:clamp(18px,2.1vw,24px);font-weight:600;color:var(--body)}
+.cover .who{font-size:clamp(16px,1.9vw,21px);color:var(--gray);margin-top:44px;font-weight:600;line-height:1.55}
+.cover .who b{color:var(--ink);font-weight:800}
+/* closing */
+.close{justify-content:center;text-align:center;background:linear-gradient(135deg,#ffffff 0%,#ffffff 55%,#fdf1f1 100%);min-height:100svh}
+.close .cbig{font-size:clamp(38px,6vw,68px);font-weight:900;color:var(--ink);line-height:1.14;letter-spacing:-.02em}
+.close .cbig .red{color:var(--red)}
+.close .csub{font-size:clamp(18px,2.1vw,25px);color:var(--body);margin-top:26px;line-height:1.6;max-width:960px;margin-left:auto;margin-right:auto}
+.close .brand{font-size:clamp(24px,3vw,34px);font-weight:900;color:var(--ink);margin-top:40px;letter-spacing:-.01em}
+.close .brand span{color:var(--red)}
+.logo{font-weight:900;color:var(--blue);letter-spacing:-.02em}
+#bar{position:fixed;top:0;left:0;height:4px;width:0;background:var(--red);z-index:30;transition:width .12s ease-out}
+.tscroll{width:100%}
+/* ── mid-width ── */
+@media(max-width:1180px){
+  .flow{flex-wrap:wrap}
+  .stats{flex-wrap:wrap;gap:24px 0}
+  .stats .s{flex:0 0 33.33%}
+  .stats .s:nth-child(3)::before,.stats .s:nth-child(1)::before{display:none}
+}
+/* ── mobile ── */
+@media(max-width:760px){
+  body{background:#fff}
+  .deck{box-shadow:none}
+  .slide{padding:74px 20px 50px;border-bottom:8px solid #eef0f2;min-height:auto}
+  .cover,.close{padding:58px 22px;min-height:auto}
+  .hd{top:22px;left:20px;right:20px}
+  .hd .sec{font-size:14px}.hd .pg{font-size:14px}
+  .body{margin-top:30px}
+  .paybar{flex-direction:column;align-items:flex-start;gap:12px;padding:18px 20px}
+  .split2{grid-template-columns:1fr;gap:30px}
+  .split2::before{display:none}
+  .split2 .col{padding:0}
+  .split2 .col.r{border-top:1px solid var(--tline);padding-top:28px}
+  .stats{flex-direction:column;gap:24px}
+  .stats .s{flex:auto;padding:0 0 22px;border-bottom:1px solid var(--tline)}
+  .stats .s + .s::before{display:none}
+  .stats .s:last-child{border-bottom:0;padding-bottom:0}
+  .axis{flex-direction:column;gap:26px}
+  .axis .a{padding:0 0 24px;border-bottom:1px solid var(--tline)}
+  .axis .a + .a::before{display:none}
+  .axis .a:last-child{border-bottom:0;padding-bottom:0}
+  .flow{flex-direction:column;gap:10px}
+  .flow .arw{transform:rotate(90deg)}
+  .node{width:100%}
+  .icons{grid-template-columns:1fr;gap:14px}
+  .ic{padding:24px 20px}
+  .pipe{flex-direction:column;gap:10px}
+  .pipe .parw{transform:rotate(90deg);padding-top:0;justify-content:center;width:100%}
+  .guards{grid-template-columns:1fr;gap:12px}
+  .mk{grid-template-columns:1fr;gap:30px}
+  .mk .phone{max-width:280px}
+  .asks .ask{padding:20px 20px;gap:15px}
+  .ask .an{width:42px;height:42px;font-size:19px}
+  .ask .at{font-size:17px}
+  .road{flex-direction:column;gap:22px}
+  .rstage{padding:0 0 22px;border-bottom:1px solid var(--tline)}
+  .rstage + .rstage::before{display:none}
+  .rstage:last-child{border-bottom:0;padding-bottom:0}
+  th,td{padding:12px 9px;font-size:14px}
+  tbody td:first-child{white-space:normal}
+  .tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:14px}
+  .tscroll>table{min-width:620px}
+  .darkbox{padding:20px 22px}
+  .note{font-size:14px}
+  .cover .swoosh{right:-38%;bottom:-26%;width:118%;height:118%}
+  .cover .who{margin-top:30px}
+}
+</style>
+</head>
+<body>
+<main class="deck" id="top">
+
+<!-- 1 · 표지 -->
+<section class="slide cover">
+  <div class="swoosh"></div>
+  <div class="hd"><span class="sec" style="letter-spacing:.04em">PARTNERSHIP · 제안</span><span class="pg" style="font-weight:900;color:var(--ink)">고향봉투</span></div>
+  <div class="b">
+    <div class="kick">국제특송 · 특송통관 · 포워딩 파트너 대상</div>
+    <div class="k1">한국 체류 동남아 근로자의 <b>고향행 국제소포 수요</b>를 모국어로 집계하고, 면허·통관·간선·목적국 배송은 <b>파트너께 비독점 위탁</b>합니다</div>
+    <div class="k2">고향봉투<br>파트너십 제안</div>
+    <div class="en">수요집계 · 합배송 · 모국어 신뢰층을 만드는 자본경량 애그리게이터</div>
+    <div class="who">우리는 <b>고객·밀도·신뢰·데이터</b>를 만들고 &nbsp;·&nbsp; 파트너는 <b>면허·통관·간선·라스트마일</b>을 실행합니다</div>
+  </div>
+</section>
+
+<!-- 2 · 한 줄 요약 -->
+<section class="slide">
+  <div class="hd"><span class="sec">한 줄 요약 · 왜 손잡는가</span><span class="pg"></span></div>
+  <div class="tw">
+    <div class="eyebrow">우리가 만드는 것과, 파트너가 얻는 것</div>
+    <div class="headline">흩어진 소포를 <span class="red">모국어로 모아</span> 밀도를 만들고,<br>그 밀도를 <span class="red">파트너의 물량</span>으로 넘겨드립니다</div>
+  </div>
+  <div class="body">
+    <div class="split2">
+      <div class="col">
+        <span class="lab">우리가 만드는 것</span>
+        <h4>세그먼트 <span class="red">수요집계</span> + 모국어 신뢰층</h4>
+        <ul>
+          <li>모국어 커뮤니티·기숙사 거점에서 <b>고향행 소포 수요를 사전 집계</b></li>
+          <li><b>에스크로 신뢰</b>(수령확인 후 정산)로 사기 우려를 제거</li>
+          <li>거점·품목·빈도의 <b>반복거래 데이터</b>를 축적</li>
+        </ul>
+      </div>
+      <div class="col r">
+        <span class="lab r">파트너가 얻는 것</span>
+        <h4>마케팅비 없이 <span class="red">예측 가능한 물량</span></h4>
+        <ul>
+          <li>언어·문화 장벽으로 못 닿던 세그먼트를 <b>CAC≈0</b>로 공급</li>
+          <li>거점당 사전집계로 <b>집화 1회당 건수↑ → 혼재(consolidation) 물량</b></li>
+          <li>정식채널 침투가 낮은 국적의 <b>순증 정식물량</b>을 양성화</li>
+        </ul>
+      </div>
+    </div>
+    <div class="paybar" style="margin-top:44px"><span class="tag">핵심</span><span class="t">우리가 파는 것은 절대 물량이 아니라 <b>밀도</b>입니다. 밀도가 파트너의 kg당 요율·집화비를 구조적으로 낮춥니다.</span></div>
+  </div>
+</section>
+
+<!-- 3 · 시장 -->
+<section class="slide">
+  <div class="hd"><span class="sec">시장 · 세그먼트</span><span class="pg"></span></div>
+  <div class="tw">
+    <div class="eyebrow">숫자는 모두 출처 기반, 실물 물량은 가정 명시 모델</div>
+    <div class="headline">체류 모수는 크고, <span class="red">고향으로 보내려는 수요</span>는 이미 존재합니다</div>
+  </div>
+  <div class="body">
+    <div class="stats">
+      <div class="s"><div class="v">160.7<small>만 명</small></div><div class="k">등록(장기체류) 외국인</div><div class="src">법무부 통계월보 2025.11 · 전년比 +8.0%</div></div>
+      <div class="s"><div class="v">60~90<small>만 명</small></div><div class="k">동남아 7개국 실체류 추정</div><div class="src">체류통계 결합 추정(범위 제시)</div></div>
+      <div class="s"><div class="v">28.7<small>만 명</small></div><div class="k">E-9 고용허가 근로자</div><div class="src">2026.7 · 제조업 약 80% 집중</div></div>
+      <div class="s"><div class="v">176.3<small>억 $</small></div><div class="k">외국인 본국송금 5년 총액</div><div class="src">597.7만 건 · 관세청·은행 집계</div></div>
+    </div>
+    <div class="darkbox">공단 기숙사에 <b>제조업 근로자가 밀집</b>합니다 — 화성 약 5.46만 명, 안산 원곡동 약 6만 명. 수도권 거주 비중 54.0%.<br>흩어진 수요가 아니라 <b>이미 한곳에 모여 있는</b> 수요라는 점이 집화 밀도의 출발점입니다.</div>
+    <div class="paybar neu" style="margin-top:26px"><span class="tag">물량 모델</span><span class="t">가정 명시 모델 — <b>1인 연 3회 보수 가정 → 연 180만~270만 건 잠재</b>. 실물 발송빈도·kg·객단가는 <b>파일럿 실측으로 교정</b>합니다(송금빈도를 소포빈도로 환산하지 않습니다).</span></div>
+  </div>
+</section>
+
+<!-- 4 · 공백 -->
+<section class="slide">
+  <div class="hd"><span class="sec">시장의 공백</span><span class="pg"></span></div>
+  <div class="tw">
+    <div class="eyebrow">돈은 조직화됐지만, 물건은 아직입니다</div>
+    <div class="headline">송금은 핀테크로 조직화됐는데,<br><span class="red">소포는 여전히 파편화</span>돼 있습니다</div>
+  </div>
+  <div class="body">
+    <div class="flow" style="margin-bottom:38px">
+      <div class="node"><div class="nt">돈 · 송금</div><div class="ns">한패스·센트비·크로스 등<br>결제·신뢰·환전 조직화</div></div>
+      <div class="arw">vs</div>
+      <div class="node hot"><div class="nt">물건 · 소포</div><div class="ns">1인 대행·페북 공구방으로<br>조각조각 파편화</div></div>
+      <div class="arw">→</div>
+      <div class="node dark"><div class="nt">빠진 층위</div><div class="ns">소액개인화물을 묶는<br>디지털 집계 계층 부재</div></div>
+    </div>
+    <div class="paybar"><span class="tag">기회</span><span class="t">'빈 땅'이 아니라 <b>조각조각 점유된 땅</b>입니다. 각 대체재는 1~2개 요소만 커버합니다 — 우리의 승부처는 최초가 아니라 <b>통합·신뢰·밀도</b>입니다.</span></div>
+    <div class="note">송금앱=결제·신뢰○/물류× · 개인 대행=물품·양방향○/에스크로·수요집계× · 특송·포워딩=통관·운송○/세그먼트 고객·모국어 UX× · 식품몰=판매○/거주자 송물 집계×</div>
+  </div>
+</section>
+
+<!-- 5 · 문제 -->
+<section class="slide">
+  <div class="hd"><span class="sec">문제 정의</span><span class="pg"></span></div>
+  <div class="tw">
+    <div class="eyebrow">대형사가 직접 못·안 하는 3대 구조적 이유</div>
+    <div class="headline">이 세그먼트는 <span class="red">혼자서는 수익이 나지 않습니다</span></div>
+  </div>
+  <div class="body">
+    <div class="axis" style="margin-bottom:38px">
+      <div class="a"><div class="n">1</div><div class="lb">저밀도 · 고집하비</div><div class="sb">소액다건이 시공간에 흩어져 <b>집화 1회당 건수가 적고</b> kg당 요율·역물류비가 높습니다.</div></div>
+      <div class="a"><div class="n">2</div><div class="lb">언어 · 문화 장벽</div><div class="sb">도달 채널이 모국어 SNS·기숙사·종교 등 비공식 커뮤니티라 <b>표준 B2B 영업이 닿지 않습니다.</b></div></div>
+      <div class="a"><div class="n">3</div><div class="lb">신뢰 · 사기 문제</div><div class="sb">선입금 후 먹튀·브로커 사기가 만연해 <b>신뢰가 곧 전환율</b>인데, 이를 세워줄 주체가 없습니다.</div></div>
+    </div>
+    <div class="darkbox">세 문제 모두 <b>대형사의 물류 코어역량 바깥</b>에 있습니다. 집계·큐레이션·모객·모국어 CS라는 레이어가 없으면 세그먼트 자체가 적자입니다 — 바로 이 레이어를 우리가 전담합니다.</div>
+  </div>
+</section>
+
+<!-- 6 · 해법 + R&R -->
+<section class="slide">
+  <div class="hd"><span class="sec">해법 · 역할 분담(R&R)</span><span class="pg"></span></div>
+  <div class="tw">
+    <div class="eyebrow">합작 커뮤니티 플랫폼 — 계약 수준 R&R</div>
+    <div class="headline">면허·통관·운송은 <span class="red">파트너</span>, 고객·밀도·신뢰·데이터는 <span class="red">우리</span></div>
+  </div>
+  <div class="body">
+    <div class="tscroll"><table>
+      <thead><tr><th style="width:30%">단계</th><th>고향봉투 (우리)</th><th>파트너 (특송·통관·포워딩)</th></tr></thead>
+      <tbody>
+        <tr><td>고객확보</td><td class="goal">모국어 커뮤니티·리더 시딩으로 세그먼트 화주 확보</td><td>표준 영업으로 닿지 않는 채널 — <small>담당 없음</small></td></tr>
+        <tr><td>집계·밀도</td><td class="goal">거점당 사전집계·마감 타이머로 혼재 물량 형성</td><td>혼재(consolidation) 간선·항공/해상 운송</td></tr>
+        <tr><td>결제·신뢰</td><td class="goal">라이선스 PG 위탁 에스크로(수령확인 후 정산)</td><td>운송·통관 실행 주체로서 배상 책임</td></tr>
+        <tr><td>통관</td><td>각 실사용자 정보 취합·모국어 안내</td><td class="goal">특송통관 라이선스·정식 신고 실행</td></tr>
+        <tr><td>목적국 배송</td><td>수령확인 시그널 회신 처리</td><td class="goal">라스트마일 배송망(창고·차량·집하점)</td></tr>
+        <tr><td>데이터</td><td class="goal">거점·품목·빈도 반복거래 데이터 소유</td><td>익명·집계 수요예측을 순증 자산으로 활용</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note">면허·차량·배송망을 우리가 보유할 필요가 없습니다. <b>'고객·수요·데이터' 대 '면허·통관·운송'</b>의 명확한 분업이 제안의 뼈대입니다.</div>
+  </div>
+</section>
+
+<!-- 7 · 파트너 가치(단위경제) -->
+<section class="slide">
+  <div class="hd"><span class="sec">파트너 가치 · 단위경제</span><span class="pg"></span></div>
+  <div class="tw">
+    <div class="eyebrow">절대 물량이 아니라 밀도·반복거래로 설득합니다</div>
+    <div class="headline">밀도가 오를수록 파트너의 <span class="red">kg당 요율·집화비가 낮아집니다</span></div>
+  </div>
+  <div class="body">
+    <div class="icons" style="margin-bottom:30px">
+      <div class="ic hot">
+        <div class="ig"><svg viewBox="0 0 24 24"><path d="M3 13h2v7H3v-7zm4-4h2v11H7V9zm4-4h2v15h-2V5zm4 8h2v7h-2v-7zm4-6h2v13h-2V7z"/></svg></div>
+        <h5>집화 밀도로 요율 절감</h5>
+        <p>거점당 사전집계로 집화 1회당 건수↑ → <b>소액개인화물의 저밀도·고집하비를 직접 해소</b>. 여럿의 소포를 묶어 한 번에 보내 배송단가를 낮춥니다.</p>
+      </div>
+      <div class="ic">
+        <div class="ig"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5z"/></svg></div>
+        <h5>CAC ≈ 0</h5>
+        <p>모국어 커뮤니티·기숙사·종교 허브라는 <b>비공식 채널의 신규 화주</b>를 마케팅비 없이 공급합니다.</p>
+      </div>
+      <div class="ic">
+        <div class="ig"><svg viewBox="0 0 24 24"><path d="M12 2l9 4v6c0 5-3.8 8.7-9 10-5.2-1.3-9-5-9-10V6l9-4zm-1 13l6-6-1.4-1.4L11 12.2 8.4 9.6 7 11l4 4z"/></svg></div>
+        <h5>순증 정식물량</h5>
+        <p>정식채널 침투가 극히 낮은 국적(예: <b>네팔 정식송금 0.4%</b>)의 비공식 물량을 정식 통관으로 양성화해 순증 매출로 안깁니다.</p>
+      </div>
+    </div>
+    <div class="paybar neu"><span class="tag">수익원리 합치</span><span class="t">특송사의 수익원리는 <b>혼재(consolidation)</b>입니다. 우리가 공동구매로 시공간 물량을 묶는 일은 그 수익원리와 <b>정확히 같은 방향</b>입니다. 화이트라벨·물량중개는 이미 업계 표준이라 제휴 저항이 낮습니다.</span></div>
+    <div class="note">스프레드·물량·kg당 절감액의 절대 수치는 <b>파일럿 요율표로 검증·확정</b>합니다. 이 장표는 방향(밀도↑ → 단가↓)만 제시합니다.</div>
+  </div>
+</section>
+
+<!-- 8 · 규제·컴플라이언스 -->
+<section class="slide">
+  <div class="hd"><span class="sec">규제 · 컴플라이언스 설계</span><span class="pg"></span></div>
+  <div class="tw">
+    <div class="eyebrow">파트너의 정식 절차 안에서만 설계 — 하방부터 닫습니다</div>
+    <div class="headline">저렴함의 근거는 오직 <span class="red">집화 밀도</span>이지,<br>세금이 아닙니다</div>
+  </div>
+  <div class="body">
+    <div class="pipe" style="margin-bottom:34px">
+      <div class="pstep"><div class="ph">거점 일괄집화</div><div class="pr">공단 거점에서 <b>모아서 한 번에</b></div></div>
+      <div class="parw">→</div>
+      <div class="pstep"><div class="ph">개인통관부호<br>정상 신고</div><div class="pr">1주문 = 1실사용자<br><b>full-value 정식 신고</b></div></div>
+      <div class="parw">→</div>
+      <div class="pstep"><div class="ph">파트너 정식통관</div><div class="pr">특송통관 라이선스<br>보유 관세법인 실행</div></div>
+      <div class="parw">→</div>
+      <div class="pstep end"><div class="ph">목적국 배송</div><div class="pr">파트너 라스트마일<br>+ 수령확인</div></div>
+    </div>
+    <div class="guards">
+      <div class="guard"><div class="gk"><svg viewBox="0 0 24 24"><path d="M12 1l9 4v6c0 5-3.8 8.7-9 10-5.2-1.3-9-5-9-10V5l9-4z"/></svg></div><div class="gt"><b class="red">'면세·절세' 프레이밍 전면 배제.</b> 저렴함의 근거는 오직 집화 밀도 요율절감으로 하드코딩합니다.</div></div>
+      <div class="guard"><div class="gk"><svg viewBox="0 0 24 24"><path d="M12 1l9 4v6c0 5-3.8 8.7-9 10-5.2-1.3-9-5-9-10V5l9-4z"/></svg></div><div class="gt">1주문을 임계 이하로 쪼개는 <b>분할 위장 로직 없음</b>. 상용·재판매 물품은 차단합니다.</div></div>
+      <div class="guard"><div class="gk"><svg viewBox="0 0 24 24"><path d="M12 1l9 4v6c0 5-3.8 8.7-9 10-5.2-1.3-9-5-9-10V5l9-4z"/></svg></div><div class="gt">결제는 <b>라이선스 PG 위탁</b> — 대금이 우리 계좌를 경유하지 않는 <b>자금무보유</b> 구조. 현금 걷이 없음.</div></div>
+      <div class="guard"><div class="gk"><svg viewBox="0 0 24 24"><path d="M12 1l9 4v6c0 5-3.8 8.7-9 10-5.2-1.3-9-5-9-10V5l9-4z"/></svg></div><div class="gt">송금은 기존 라이선스 송금앱으로 <b>분리</b>. 소액해외송금업·전자금융업 하방을 먼저 닫습니다.</div></div>
+    </div>
+    <div class="note">관세법인 자문·관세청 사전심사(유권해석)로 집계 플랫폼의 지위를 <b>문서로 확정</b>한 뒤 파일럿을 진행합니다.</div>
+  </div>
+</section>
+
+<!-- 9 · 다국어 신뢰(차별점) -->
+<section class="slide">
+  <div class="hd"><span class="sec">차별점 · 다국어 신뢰</span><span class="pg"></span></div>
+  <div class="tw">
+    <div class="eyebrow">말이 아니라, 지금 돌아가는 화면으로</div>
+    <div class="headline">7개국어로 <span class="red">실제 작동하는</span> 모국어 신뢰 플랫폼</div>
+  </div>
+  <div class="body">
+    <div class="mk">
+      <div class="phone">
+        <div class="scr">
+          <div class="top"><span class="brand">고향<span>봉투</span></span><span class="langtab">🌐 नेपाली</span></div>
+          <div class="greet">नमस्ते! 고향으로 보낼 소포를 모아 보내요</div>
+          <div class="prod"><div class="th"></div><div><div class="pt">아웃바운드 표준소포 · 5kg</div><div class="pd">거점 마감까지 12시간 · 함께 12건</div></div></div>
+          <div class="prod"><div class="th"></div><div><div class="pt">거점 · 화성 제1공단 기숙사</div><div class="pd">픽업 예정 · 목요일</div></div></div>
+          <div class="esc"><div class="dot"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19 20 8l-1.5-1.5z"/></svg></div><div class="et">에스크로 보호 · 목적국 수령확인 후 파트너 정산</div></div>
+          <div class="cta">함께 보내기</div>
+        </div>
+      </div>
+      <div class="rt">
+        <p class="lead">정식 특송사가 주기 어려운 <b>비언어 마찰 제거</b>를 표준 기능으로 제공합니다. 주문·통관 안내·주소입력·CS를 전부 모국어로, 그리고 <b>에스크로로 신뢰를</b>.</p>
+        <div class="langs">
+          <span class="langchip core">नेपाली · 네팔어</span>
+          <span class="langchip core">ខ្មែរ · 크메르어</span>
+          <span class="langchip core">Tiếng Việt · 베트남어</span>
+          <span class="langchip">그 외 4개국어</span>
+        </div>
+        <a class="livelink" href="https://insightjung27.github.io/gohyang-bongtu/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.9 6h-2.9a15.7 15.7 0 00-1.2-3.6A8 8 0 0118.9 8zM12 4c.8 1.1 1.4 2.5 1.8 4h-3.6C10.6 6.5 11.2 5.1 12 4zM4.3 14a8 8 0 010-4h3.3a17.6 17.6 0 000 4H4.3zm.8 2h2.9c.3 1.3.7 2.5 1.2 3.6A8 8 0 015.1 16zM8 8H5.1a8 8 0 013.9-3.6C8.4 5.5 8 6.7 8 8zm4 12c-.8-1.1-1.4-2.5-1.8-4h3.6c-.4 1.5-1 2.9-1.8 4zm2.2-6H9.8a15.4 15.4 0 010-4h4.4a15.4 15.4 0 010 4zm.6 5.6c.5-1.1.9-2.3 1.2-3.6h2.9a8 8 0 01-4.1 3.6zM16.4 14a17.6 17.6 0 000-4h3.3a8 8 0 010 4h-3.3z"/></svg>
+          라이브 데모 열기 <span class="u">insightjung27.github.io/gohyang-bongtu</span>
+        </a>
+        <div class="note" style="text-align:left;margin:20px 0 0">근로자용 다국어 프로토타입(라이브) — 화면은 데모 데이터이며, 실사용자 검증은 파일럿 단계입니다.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · 파일럿 제안 -->
+<section class="slide">
+  <div class="hd"><span class="sec">파일럿 제안</span><span class="pg"></span></div>
+  <div class="tw">
+    <div class="eyebrow">작게 시작해, 밀도가 요율을 낮춤을 숫자로 증명</div>
+    <div class="headline">단일 공단 1곳 · <span class="red">최소물량 약정 없이</span> 시작합니다</div>
+  </div>
+  <div class="body">
+    <div class="tscroll"><table>
+      <thead><tr><th>구분</th><th>파일럿 설계</th></tr></thead>
+      <tbody>
+        <tr><td>범위</td><td>단일 공단 기숙사 밀집지 <b>1곳</b> · 앵커 특송사 1곳 + 특송통관 관세법인 1곳(비독점)</td></tr>
+        <tr><td>방향·품목</td><td>아웃바운드(한국→본국) <b>표준소포</b> — 의류·규제 가벼운 품목. 규제 무거운 품목·역방향은 배제</td></tr>
+        <tr><td>약정</td><td class="goal">최소보장물량(MG)·위약금 약정 없음 — 밀도를 몰아오는 채널로 검증</td></tr>
+        <tr><td>KPI ①</td><td class="goal">거점당 반복 발송률 <small>(최우선 지표)</small></td></tr>
+        <tr><td>KPI ②</td><td>요율 델타 <small>플랫폼 vs 기존 개인 대행</small> · 에스크로 전환율/분쟁률</td></tr>
+      </tbody>
+    </table></div>
+    <div class="paybar" style="margin-top:26px"><span class="tag">선검증 게이트</span><span class="t">'<b>밀도가 요율을 낮춘다</b> + <b>에스크로가 전환을 높인다</b>'를 숫자로 증명하지 못하면 확장을 보류합니다. 하방을 먼저 닫는 설계입니다.</span></div>
+  </div>
+</section>
+
+<!-- 11 · 수익·정산·비독점 -->
+<section class="slide">
+  <div class="hd"><span class="sec">수익 · 정산 · 비독점</span><span class="pg"></span></div>
+  <div class="tw">
+    <div class="eyebrow">파트너 종속도, 우회도 없는 구조</div>
+    <div class="headline">멀티호밍 · 데이터 소유 · <span class="red">우회금지</span>를 계약에 담습니다</div>
+  </div>
+  <div class="body">
+    <div class="split2">
+      <div class="col">
+        <span class="lab">수익 구조</span>
+        <h4>경량 <span class="red">스프레드 + 집계수수료</span></h4>
+        <ul>
+          <li>주 수익 = 회원 청구가 − 파트너 화이트라벨 <b>도매요율의 스프레드</b></li>
+          <li>보조 = 공동구매 집계수수료 · 역방향 구매대행 마진(상방 옵션)</li>
+          <li>물류 자본·재고 0 — <b>하방은 계약 파기, 상방은 멀티코리도</b></li>
+        </ul>
+      </div>
+      <div class="col r">
+        <span class="lab r">정산 · 관계</span>
+        <h4>데이터 소유 + <span class="red">멀티호밍</span></h4>
+        <ul>
+          <li>반복거래·회원접점 <b>데이터 소유권을 계약으로 확정</b></li>
+          <li>코리도별 <b>복수 파트너</b>로 요율 인질·단일 종속 방지</li>
+          <li>목적외이용·회원 재접촉 금지 · <b>non-circumvention(우회금지)</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="darkbox" style="margin-top:40px">정산은 <b>라이선스 PG 에스크로</b>를 경유합니다. 대금이 우리 계좌에 머무르지 않는 자금무보유 구조로, 파트너·우리 모두의 규제 하방을 닫습니다.</div>
+  </div>
+</section>
+
+<!-- 12 · 로드맵 -->
+<section class="slide">
+  <div class="hd"><span class="sec">확장 로드맵</span><span class="pg"></span></div>
+  <div class="tw">
+    <div class="eyebrow">신뢰 웨지로 열고, 밀도로 넓힙니다</div>
+    <div class="headline">네팔·캄보디아에서 시작해 <span class="red">베트남으로 수평 확장</span></div>
+  </div>
+  <div class="body">
+    <div class="road">
+      <div class="rstage wedge">
+        <span class="rp">웨지</span>
+        <div class="rt">네팔 · 캄보디아</div>
+        <div class="rd">정식 침투율이 극히 낮아 <b>신뢰 웨지·순증 명분</b>이 가장 큰 코리도. 신뢰(에스크로)가 1픽.</div>
+      </div>
+      <div class="rstage">
+        <span class="rp">밀도</span>
+        <div class="rt">베트남</div>
+        <div class="rd">체류 모수 최대·단일 채널 이점의 <b>규모 코리도</b>로 밀도 확장.</div>
+      </div>
+      <div class="rstage">
+        <span class="rp">방어</span>
+        <div class="rt">멀티코리도 네트워크</div>
+        <div class="rd">코리도별 복수 파트너·데이터 소유 유지로 <b>어느 파트너도 전량 대체 불가</b>하게 고정.</div>
+      </div>
+    </div>
+    <div class="paybar neu" style="margin-top:40px"><span class="tag">경계</span><span class="t">결제·물류를 풀스택으로 이미 장악한 코리도(필리핀)는 <b>비치헤드에서 제외</b>합니다 — 이길 수 없는 곳에서 싸우지 않습니다.</span></div>
+  </div>
+</section>
+
+<!-- 13 · 요청사항 -->
+<section class="slide">
+  <div class="hd"><span class="sec">파트너께 요청</span><span class="pg"></span></div>
+  <div class="tw">
+    <div class="eyebrow">다음 라운드를 위해 이 네 가지를 함께 보고 싶습니다</div>
+    <div class="headline">필요한 것은 <span class="red">요율표 · 커버리지 · 조건 · 계약안</span></div>
+  </div>
+  <div class="body">
+    <div class="asks">
+      <div class="ask"><div class="an">1</div><div class="at"><b>코리도별 요율표</b> — 혼재(consolidation) 기준 kg당·건당 도매요율과 밀도 구간별 리베이트 구조</div></div>
+      <div class="ask"><div class="an">2</div><div class="at"><b>라스트마일 커버리지</b> — 목적국(카트만푸·프놈펜·하노이 등) 배송망·통관 소요·추적 수준</div></div>
+      <div class="ask"><div class="an">3</div><div class="at"><b>파일럿 조건</b> — 단일 공단 아웃바운드 표준소포 기준, 최소물량 약정 없는 개시 조건</div></div>
+      <div class="ask hot"><div class="an">4</div><div class="at"><b>데이터 · 정산 계약안</b> — 비독점 · 데이터 소유 · non-circumvention · 정산 경유를 담은 표준계약 초안</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · 클로징 -->
+<section class="slide close">
+  <div class="hd"><span class="sec" style="letter-spacing:.04em">고향봉투</span><span class="pg logo">PARTNERSHIP</span></div>
+  <div class="tw">
+    <div class="eyebrow">우리가 밀도를 만들면, 파트너의 물량이 됩니다</div>
+    <div class="cbig">흩어진 소포를 <span class="red">한 봉투로</span>,<br>파트너의 <span class="red">순증 물량</span>으로</div>
+    <div class="csub">면허·통관·간선·라스트마일은 파트너가 가장 잘합니다. 우리는 대형사가 닿지 못하는 세그먼트의 고객·밀도·신뢰·데이터를 만들어 그 위에 얹겠습니다.</div>
+    <div class="brand">고향<span>봉투</span></div>
+  </div>
+</section>
+
+</main>
+<div id="bar"></div>
+<script>
+/* 원페이지 스크롤 덱 — 페이지 번호 채우기 + 스크롤 진행 인디케이터 */
+const slides=[...document.querySelectorAll('.slide')];
+slides.forEach((s,k)=>{const pg=s.querySelector('.pg:not(.logo)');if(pg&&pg.textContent.trim()==='')pg.textContent=String(k+1).padStart(2,'0');});
+const bar=document.getElementById('bar');
+function prog(){const d=document.documentElement;const max=d.scrollHeight-innerHeight;const p=max>0?Math.min(1,Math.max(0,scrollY/max)):0;bar.style.width=(p*100)+'%';}
+addEventListener('scroll',prog,{passive:true});addEventListener('resize',prog);prog();
+</script>
+</body>
+</html>
